@@ -14,15 +14,15 @@
 <nav>
     <h1 class="logo">Gregg <span class="last-name">Fine</span></h1>
     <ul class="nav-links">
-        <li><a href="">About</a></li>
-        <li><a href="">Skills</a></li>
-        <li><a href="">Projects</a></li>
-        <li><a href="">Contact</a></li>
+        <li><a href="#about-section" id="about-select">About</a></li>
+        <li><a href="#technical-skills" id="skills-select">Skills</a></li>
+        <li><a href="#project-section" id="project-select">Projects</a></li>
+        <li><a href="#contact-section" id="contact-select">Contact</a></li>
     </ul>
 </nav>
 
 
-<div class="about-container">
+<div class="about-container" id="about-section">
     <img class="gregg-img" src="./images/Gregg_Profile_Pic_Blur_Exp.jpg" />
     <p class="about-text">
         <strong>Web Developer/Full-Stack Engineer</strong> experienced in developing full-stack applications with
@@ -38,9 +38,9 @@
 
 
 
-<div class="pink-box">
+<div id="technical-skills">
     <div class="skills-container">
-        <h1>Technical Skills:</h1>
+        <h1>Technical Skills</h1>
         <ul class="skill-list">
             <li id="skill">React</li>
             <li id="skill">Redux</li>
@@ -65,7 +65,7 @@
 
 
 
-<div class="project-cards">
+<div class="project-cards" id="project-section">
 
         <li class="project-item" id="project-item-1">
             <img src="./images/music-library-crop-2.jpg" class="temp-image" />
@@ -151,29 +151,15 @@
 
 
 
-<footer class="footer">
+<footer class="footer" id="contact-section">
     <h1 class="footer-name">Gregg Fine</h1>
 
 
-    <p class="footer-email">
-        <a href="mailto:bbeez8500@gmail.com">
-            bbeez8500@gmail.com
+    <!-- <p class="footer-email"> -->
+        <a href="mailto:bbeez8500@gmail.com" id="email-address">
+            <p class="footer-email">bbeez8500@gmail.com</p>
         </a>
-    </p>
-
-    <!-- <ul class="footer-links social">
-        <li>
-                <a href="https://twitter.com/GreggFine" target="_blank"><i class="fa fa-twitter"></i></a>
-        </li>
-
-        <li>
-            <a href="https://www.linkedin.com/in/greggfine/" target="_blank"><i class="fa fa-linkedin"></i></a>
-        </li>
-
-        <li>
-            <a href="https://github.com/greggfine" target="_blank"><i class="fa fa-github"></i></a>
-        </li>
-    </ul> -->
+    <!-- </p> -->
 
     <div class="footer-links social">
         <a class="fa fa-twitter" title="" target="_blank" href="https://twitter.com/GreggFine"></a>

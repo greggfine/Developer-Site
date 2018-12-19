@@ -54,7 +54,7 @@ button a {
 }
 
 #btn-group-4 {
-    background-color: #DBD9D1;
+    background-color: #504e47;
 }
 
 h1 {
@@ -130,6 +130,7 @@ nav{
 
 .nav-links > li a:hover{
     cursor: pointer;
+    color: var(--devPink);
 }
 
 h1{
@@ -155,7 +156,7 @@ h1{
     width: 18%;
 }
 
-.pink-box{
+#technical-skills{
   background-color: #D5917D;
 }
 
@@ -272,7 +273,7 @@ h1{
 }
 
 #project-number-4 {
-    color: #DBD9D1;
+    color: #bfbeb9;
 }
 
 .project-subtitle {
@@ -337,14 +338,16 @@ h1{
     margin-top: -20px;
     font-size: 2rem;
     text-align: center;
-}
-
-.footer-email a{
-    text-decoration: none;
     color: var(--devPink);
+    height: 60px;
+    line-height: 60px;
 }
 
-.footer-email a:hover{
+#email-address{
+    text-decoration: none;
+}
+
+.footer-email:hover{
     cursor: pointer;
 }
 
