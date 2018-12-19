@@ -15,6 +15,48 @@ body {
   background-color: var(--devYellow);
 }
 
+button {
+    border: none;
+    background-color: #759F9B;
+    /* background-color: #444C63; */
+    /* background-color: #BE7865; */
+    /* background-color: #DBD9D1; */
+    color: #fff;
+    border-radius: 6px;
+    width: 140px;
+    height: 50px;
+    font-size: 2rem;
+}
+
+button a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.btn-group {
+    display: flex;
+    width: 430px;
+    justify-content: space-between;
+    /* border: 1px solid #fff; */
+    margin-top: -400px;
+}
+
+#btn-group-1 {
+    background-color: #759F9B;
+}
+
+#btn-group-2 {
+    background-color: #444C63;
+}
+
+#btn-group-3 {
+    background-color: #BE7865;
+}
+
+#btn-group-4 {
+    background-color: #DBD9D1;
+}
+
 h1 {
   text-align: center;
   font-size: 3.2rem;
@@ -40,7 +82,7 @@ img {
   justify-content: space-around;
 }
 
-#project-item {
+.project-item {
   flex-basis: 700px;
   margin: 20px;
 }
@@ -168,7 +210,7 @@ h1{
     position: relative;
 }
 
-#project-item {
+.project-item {
     list-style-type: none;
     box-shadow: 10px 10px 6px #717171;
     /* border: 1px solid #000; */
@@ -176,19 +218,49 @@ h1{
     width: 1100px;
     display: flex;
     max-height: 520px;
-    background-color: #91C6C2;
 }
 
-#project-item img {
+.project-item img {
     width: 50%;
 }
 
+#project-item-1 {
+    background-color: #91C6C2;
+}
+
+#project-item-2 {
+    background-color: #2A3041;
+}
+
+#project-item-3 {
+    background-color: #E18E78;
+}
+
+#project-item-4 {
+    background-color: #F8F2EB;
+}
+
 .project-number {
-    color: #fff;
     font-size: 12rem;
     position: absolute;
     left: 77px;
     top: -100px;
+}
+
+#project-number-1 {
+    color: #759F9B;
+}
+
+#project-number-2 {
+    color: #444C63;
+}
+
+#project-number-3 {
+    color: #BE7865;
+}
+
+#project-number-4 {
+    color: #DBD9D1;
 }
 
 .project-subtitle {
@@ -213,7 +285,7 @@ h1{
 .footer{
     background-color: var(--devBlue);
     color: #fff;
-    height: 300px;
+    height: 400px;
 }
 
 .footer-name {
