@@ -1,0 +1,261 @@
+html{
+  --devBlue: #061931;
+  --devYellow: #F6F3EB;
+  --devPink: #D5917D;
+  font-size: 10px;
+}
+
+body {
+ font-family: 'Roboto', sans-serif;
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background-color: var(--devYellow);
+}
+
+h1 {
+  text-align: center;
+  font-size: 3.2rem;
+}
+
+img {
+  width: 10%;
+  border-radius: 10px;
+}
+
+#project-grid {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  -o-flex-wrap: wrap;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: space-around;
+}
+
+#project-item {
+  flex-basis: 700px;
+  margin: 20px;
+}
+
+
+
+
+.last-name{
+    color: var(--devPink);
+}
+
+.logo{
+    letter-spacing: 9px;
+}
+
+nav{
+    background-color: var(--devBlue);
+    height: 70px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 100px;
+    position: fixed;
+    width: 100%;
+    /* border: 5px solid #fff; */
+}
+
+.nav-links{
+    color: #fff;
+    display: flex;
+    list-style-type: none;
+}
+
+.nav-links > li{
+    padding: 30px;
+    font-size: 2rem;
+}
+
+.nav-links > li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.nav-links > li a:hover{
+    cursor: pointer;
+}
+
+h1{
+    line-height: 70px;
+}
+
+.about-container{
+    margin-bottom: 200px;
+    padding-top: 70px;
+}
+
+.about-text {
+    font-size: 1.6rem;
+    max-width: 600px;
+    margin: auto;
+    line-height: 20px;
+}
+
+.gregg-img{
+    border-radius: 50%;
+    display: block;
+    margin: 100px auto;
+    width: 18%;
+}
+
+.pink-box{
+  background-color: #D5917D;
+}
+
+
+.skill-list{
+    display: flex;
+    max-width: 900px;
+    margin: auto;
+    flex-wrap: wrap;
+    /* border: 1px solid #000; */
+    justify-content: space-around;
+}
+
+#skill {
+  flex-basis: 27%;
+  list-style-type: none;
+  padding: 10px;
+  margin: 10px;
+  background-color: #fff;
+}
+
+.skills-container {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 200px;
+  padding: 100px 0;
+}
+
+
+.projects-container{
+    margin-bottom: 200px;
+}
+
+.project-cards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project-description {
+    color: #fff;
+    font-size: 1.8rem;
+    max-width: 506px;
+    /* border: 10px solid #fff; */
+    height: 500px;
+}
+
+.project-info {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    position: relative;
+}
+
+#project-item {
+    list-style-type: none;
+    box-shadow: 10px 10px 6px #717171;
+    /* border: 1px solid #000; */
+    background-color: var(--devBlue);
+    width: 1100px;
+    display: flex;
+    max-height: 520px;
+    background-color: #91C6C2;
+}
+
+#project-item img {
+    width: 50%;
+}
+
+.project-number {
+    color: #fff;
+    font-size: 12rem;
+    position: absolute;
+    left: 77px;
+    top: -100px;
+}
+
+.project-subtitle {
+    color: #fff;
+    font-size: 2.3rem;
+    /* flex-basis: 67%; */
+}
+
+.project-title {
+    color: #fff;
+    font-size: 4.5rem;
+    /* flex-basis: 67%; */
+}
+
+.temp-image {
+    background-color: red;
+    max-width: 400px;
+    /* flex-basis: 23%; */
+    border-radius: 0;
+}
+
+.footer{
+    background-color: var(--devBlue);
+    color: #fff;
+    height: 300px;
+}
+
+.footer-name {
+    padding-top: 40px;
+    font-size: 5rem;
+    letter-spacing: 4px;
+    font-weight: 400;
+    color: var(--devYellow);
+}
+
+.footer-email {
+    margin-top: -20px;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.footer-email a{
+    text-decoration: none;
+    color: var(--devPink);
+}
+
+.footer-email a:hover{
+    cursor: pointer;
+}
+
+.footer-links {
+    padding-top: 30px;
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+}
+
+.footer-links li {
+    font-size: 3.5rem;
+    padding-right: 40px;
+    transition: transform 200ms;
+}
+
+.footer-links li a {
+    color: var(--devYellow);
+}
+
+.footer-links li:hover {
+    transform: scale(1.05);
+}
