@@ -148,6 +148,22 @@ h1{
     padding-top: 70px;
 }
 
+#header-name, #header-subtitle {
+    animation-name: leadin;
+    animation-duration: 1.3s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+}
+
+@keyframes leadin{
+    0%{
+        opacity: 0;
+    }
+    100% {
+         opacity: 1;
+    }
+}
+
 #header-name {
     text-align: center;
     font-size: 6.4rem;
