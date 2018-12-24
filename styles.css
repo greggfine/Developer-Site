@@ -212,6 +212,8 @@ h1{
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: -70px;
+    margin-bottom: 140px;
 }
 
 .project-description {
@@ -353,7 +355,11 @@ h1{
 .footer{
     background-color: var(--devBlue);
     color: #fff;
-    height: 500px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 80px;
 }
 
 .footer-name {
@@ -409,8 +415,11 @@ h1{
     text-align: center;
     font-size: 6rem;
     color: var(--devPink);
-    width: 100%;
-    padding-top: 33px;
+    transition: transform 300ms;
+}
+
+#envelope:hover {
+    transform: scale(1.2)
 }
 
 
