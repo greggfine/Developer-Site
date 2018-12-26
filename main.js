@@ -46,3 +46,13 @@ var contactSelect = document.querySelector("#contact-select");
 contactSelect.addEventListener('click', function () {
     smoothScroll("#contact-section", 1000);
 })
+
+
+// 
+const navLinks = document.querySelector('.nav-links');
+const hamburgerIcon = document.querySelector('#hamburger-icon');
+console.log(navLinks)
+hamburgerIcon.addEventListener('click', () => {
+    // console.log(navLinks)
+    navLinks.classList.toggle('show-links')
+})
