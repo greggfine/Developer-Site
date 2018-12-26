@@ -46,12 +46,14 @@ button a {
 }
 
 .btn-group {
-    display: flex;
+    /* display: flex; */
     /* width: 430px; */
     justify-content: space-around;
     /* border: 1px solid #fff; */
-    padding-top: 100px;
+    margin-top: 130px;
     /* margin-top: -400px; */
+    /* border: 1px solid #000; */
+    text-align: center;
 }
 
 #btn-group-1 {
@@ -68,6 +70,10 @@ button a {
 
 #btn-group-4 {
     background-color: #504e47;
+}
+
+.btn-left {
+    margin-right: 100px;
 }
 
 h1 {
@@ -268,6 +274,7 @@ h1{
     margin: 40px auto;
     background-repeat: no-repeat;
     background-size: 500px 600px;
+    box-shadow: 10px 10px 6px #717171;
 }
 
 #project-card-1 {
@@ -304,6 +311,7 @@ h1{
     font-size: 4.5rem;
     width: 100%;
     text-align: center;
+    padding-top: 20px;
 }
 
 #project-title-music-library, #project-title-guitar-website, #project-title-cms-website {
@@ -368,7 +376,8 @@ h1{
     font-weight: normal;
     /* height: 500px; */
     margin: auto;
-    padding-top: 50px;
+    margin-top: 80px;
+    text-align: center;
 }
 
 #project-description-tutorial-search {
@@ -380,85 +389,8 @@ h1{
 }
 
 
-@media screen and (max-width: 1250px){
-    .project-card-box {
-        width: 1000px;
-        height: 400px;
-        margin: 40px auto;
-        background-size: 400px 500px;
-    }
-    
-    .project-card-content-box{
-        width: 700px;
-        height: 400px;
-        /* float: none; */
-    }
-}
 
 
-@media screen and (max-width: 1000px){
-    .project-card-box {
-        width: 800px;
-        height: 400px;
-        margin: 40px auto;
-        background-size: 300px 400px;
-    }
-    
-    .project-card-content-box{
-        width: 550px;
-        height: 400px;
-        /* float: none; */
-    }
-}
-
-/* @media screen and (max-width: 850px){
-    .project-card-box {
-        width: 550px;
-        height: 400px;
-        margin: 40px auto;
-        background-size: 200px 400px;
-    }
-    
-    .project-card-content-box{
-        width: 350px;
-        height: 400px;
-    }
-} */
-
-@media screen and (max-width: 800px){
-    .project-card-box {
-        width: 580px;
-        height: 410px;
-        margin: 40px auto;
-    }
-   #project-card-1 {
-      background-image: none; 
-    }
-    
-    .project-card-content-box{
-        width: 580px;
-        height: 410px;
-        float: none;
-    }
-}
-
-
-@media screen and (max-width: 600px){
-    .project-card-box {
-        width: 380px;
-        height: 410px;
-        margin: 40px auto;
-    }
-   #project-card-1 {
-      background-image: none; 
-    }
-    
-    .project-card-content-box{
-        width: 380px;
-        height: 410px;
-        float: none;
-    }
-}
 
 
 
@@ -511,14 +443,14 @@ h1{
 } */
 
 
-.project-number {
+/* .project-number {
     font-family: Times;
     font-weight: 600;
     font-size: 12rem;
     position: absolute;
     left: 77px;
     top: -100px;
-}
+} */
 
 #project-number-1, #project-number-5  {
     color: #759F9B;
@@ -545,6 +477,7 @@ h1{
     /* border: 1px solid #000; */
     width: 428px;
     margin: auto;
+    padding-top: 40px;
 }
 
 #project-subtitle-tutorial-search, #project-subtitle-statement-coder {
@@ -678,46 +611,49 @@ h1{
     font-size: 2rem;
 }
 
-#footer-line {
+.footer-line {
     height: 1px;
     width: 425px;
     background-color: rgba(250,250,250,0.5);
     margin: auto;
 }
 
-@media screen and (max-width: 500px){
+
+/* ============================================= */
+
+/* @media screen and (max-width: 500px){
 
     #footer-line {
         height: 1px;
         width: 325px;
         background-color: rgba(250,250,250,0.5);
         margin: auto;
-    }
+    } */
 
-    #footer-message {
+    /* #footer-message {
         font-size: 1.6rem; 
     }
 
     .btn-group {
         width: 200px;
         justify-content: space-between;
-        margin-top: -300px;
-    }
+        margin-top: 140px;
+    } */
     
-    button {
+    /* button {
         width: 88px;
         height: 41px;
         font-size: 1.5rem;
-    }
-    .project-info {
+    } */
+    /* .project-info { */
         /* width: 100%; */
-    }
+    /* } */
 
     /* .project-title {
         font-size: 2.5rem;
     }    */
 
-    .project-number {
+    /* .project-number {
         font-size: 6rem;
         position: absolute;
         left: 77px;
@@ -733,9 +669,9 @@ h1{
     #header-name {
         font-size: 4.4rem;
         letter-spacing: 1.5px;
-    }
+    } */
 
-    #header-subtitle {
+    /* #header-subtitle {
         font-size: 3.1rem;
         font-weight: 400;
     }
@@ -748,9 +684,9 @@ h1{
         display: flex;
         flex-direction: column;
         align-items: center;
-    }
+    } */
 
-    #skill {
+    /* #skill {
         padding: 5px;
         margin: 5px;
         box-shadow: 3px 3px 5px #00000073;
@@ -768,9 +704,9 @@ h1{
         font-size: 4.2rem;
         letter-spacing: 3px;
     }
-}
+} */
 
-@media screen and (max-width: 1700px) and (min-width: 500px){
+/* @media screen and (max-width: 1700px) and (min-width: 500px){
      .about-text {
         font-size: 2rem;
     }
@@ -778,21 +714,21 @@ h1{
     .gregg-img{
         width: 340px;
     }
-}
+} */
 
-@media screen and (max-width: 1170px){
+/* @media screen and (max-width: 1170px){ */
     /* .project-item {
         flex-basis: 300px;
         margin: 20px;
     } */
 
-    .project-info {
+    /* .project-info { */
         /* display: flex;
         flex-direction: column;
         width: 100%;
         align-items: center;
         position: relative; */
-    }
+    /* } */
 
     /* .temp-image {
         background-color: red;
@@ -805,8 +741,238 @@ h1{
     } */
 
 
-.project-item {
+/* .project-item { */
     /* width: 400px; */
     /* height: 500px; */
     /* margin: auto; */
-}   
+/* }    */
+
+
+
+
+@media screen and (max-width: 1250px){
+    .btn-group {
+        justify-content: space-around;
+        margin-top: 80px;
+        text-align: center;
+    }    
+    .project-card-box {
+        width: 1000px;
+        height: 400px;
+        margin: 40px auto;
+        background-size: 400px 500px;
+    }
+    
+    .project-card-content-box{
+        width: 700px;
+        height: 400px;
+    }
+
+    .project-number {
+        font-size: 7rem;
+        position: absolute;
+        left: 47px;
+        top: -40px;
+    }
+
+    .project-title {
+        padding-top: 10px;
+        font-size: 3.5rem;
+    }
+
+    .project-subtitle {
+        padding-top: 0px;
+    }
+
+    #tech, #tech2, #tech3 {
+        font-size: 1.7rem;
+        padding: 8px;
+    }
+
+    #tech3 {
+        padding: 11px; 
+    }
+
+    .project-description {
+        font-size: 1.8rem;
+        margin: auto;
+        margin-top: 50px;
+    }
+
+}
+
+@media screen and (max-width: 1000px){
+    .project-card-box {
+        width: 800px;
+        height: 400px;
+        margin: 40px auto;
+        background-size: 300px 400px;
+    }
+    
+    .project-card-content-box{
+        width: 550px;
+        height: 400px;
+        /* float: none; */
+    }
+
+    .project-number {
+        font-size: 7rem;
+        position: absolute;
+        left: 47px;
+        top: -40px;
+    }
+
+    .project-subtitle {
+        width: 388px;
+    }
+
+
+
+    #tech, #tech2, #tech3 {
+        font-size: 1.5rem;
+        padding: 7px;
+    }
+
+    #tech3 {
+        padding: 10px; 
+    }
+
+    .btn-group {
+        margin-top: 120px;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .project-card-box {
+        width: 580px;
+        height: 410px;
+        margin: 40px auto;
+    }
+   #project-card-1 {
+      background-image: none; 
+    }
+    
+    .project-card-content-box{
+        width: 580px;
+        height: 410px;
+        float: none;
+    }
+
+    .project-title {
+        padding-top: 30px;
+    }
+}
+
+
+@media screen and (max-width: 600px){
+    .project-card-box {
+        width: 380px;
+        height: 410px;
+        margin: 40px auto;
+    }
+   #project-card-1 {
+      background-image: none; 
+    }
+    
+    .project-card-content-box{
+        width: 380px;
+        height: 410px;
+        float: none;
+    }
+
+    button {
+        width: 90px;
+        height: 40px;
+        font-size: 1.5rem;
+    }
+
+    .btn-group {
+        margin-top: 60px;
+    }
+
+    .btn-left {
+         margin-right: 60px;
+    }
+
+    .project-title {
+        padding-top: 40px;
+        font-size: 3rem;
+    }
+#project-title-music-library {
+    max-width: 200px;
+    margin: auto;
+}
+
+.project-subtitle {
+    /* justify-content: center; */
+    max-width: 278px;
+    margin-top: 30px;
+    /* padding-top: 40px; */
+    /* flex-wrap: wrap; */
+    display: block;
+    text-align: center;
+    /* border: 1px solid #000; */
+    height: 100px;
+}
+
+
+#tech, #tech2, #tech3 {
+    font-size: 1.8rem;
+    /* border: none; */
+    padding: 6px;
+    /* margin: 0 5px 130px 5px; */
+    /* border: 1px solid #000; */
+    line-height: 55px;
+}
+
+#tech2 {
+    /* border: none; */
+}
+
+#tech3 {
+    padding: 13px; 
+}
+
+    .project-description {
+        font-size: 1.8rem;
+        margin: auto;
+        margin-top: 20px;
+    }
+
+    .project-number {
+        font-size: 6rem;
+        left: 27px;
+    }
+
+    .skill-list{
+
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    #skill {
+        width: 240px;
+    }
+
+    .about-text {
+        font-size: 1.6rem;
+        max-width: 350px;
+    }
+
+    .gregg-img{
+        width: 264px;
+    }
+
+    #header-name {r;
+        font-size: 5.4rem;
+        letter-spacing: 2px;
+    }
+
+    #header-subtitle {
+        font-size: 3.1rem;
+        margin-top: -30px;
+        letter-spacing: -3px;
+    }
+}
+
