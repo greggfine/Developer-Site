@@ -50,9 +50,11 @@ contactSelect.addEventListener('click', function () {
 
 // 
 const navLinks = document.querySelector('.nav-links');
+// const logo = document.querySelector('.logo');
 const hamburgerIcon = document.querySelector('#hamburger-icon');
 hamburgerIcon.addEventListener('click', function() {
     navLinks.classList.toggle('show-links')
+    // logo.classList.add('hide-logo');
 })
 
 const hamburgerIconTop = document.querySelector("#hamburger-icon-top");
