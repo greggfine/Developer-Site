@@ -523,12 +523,20 @@ h1{
     cursor: pointer;
 }
 
+
+
+
+
+
+
+
+
+
+/* ======================================================================= */
 @media screen and (max-width: 1250px) {
     
     .btn-group {
-        justify-content: space-around;
         margin-top: 80px;
-        text-align: center;
     }    
 
     .project-card-box {
@@ -541,13 +549,6 @@ h1{
     .project-card-content-box{
         width: 700px;
         height: 400px;
-    }
-
-    .project-number {
-        font-size: 7rem;
-        position: absolute;
-        left: 47px;
-        top: -40px;
     }
 
     .project-title {
@@ -569,13 +570,20 @@ h1{
     }
 
     .project-description {
-        font-size: 1.8rem;
-        margin: auto;
         margin-top: 50px;
     }
 }
+/* ========================================================================== */
 
 @media screen and (max-width: 1000px) {
+
+    .btn-group {
+        margin-top: 90px;
+    }
+
+    .logo {
+        visibility: hidden;
+    }
 
     .project-card-box {
         width: 800px;
@@ -591,7 +599,6 @@ h1{
 
     .project-number {
         font-size: 7rem;
-        position: absolute;
         left: 47px;
         top: -40px;
     }
@@ -608,37 +615,22 @@ h1{
     #tech3 {
         padding: 10px; 
     }
-
-    .btn-group {
-        margin-top: 90px;
-    }
-
-      .logo {
-        visibility: hidden;
-    }
 }
 
+/* =========================================================================== */
 @media screen and (max-width: 800px) {
 
-    .project-card-box {
-        width: 580px;
-        height: 410px;
-        margin: 40px auto;
-        box-shadow: 4px 4px 6px var(--devBoxShadowGrey);
+    .close-x-top {
+        transform: rotate(45deg) scaleX(1.25);
     }
 
-    #project-card-1 {
-      background-image: none; 
-    }
-    
-    .project-card-content-box{
-        width: 580px;
-        height: 410px;
-        float: none;
+    .close-x-middle {
+        opacity: 0;
+        transform: scaleX(0);
     }
 
-    .project-title {
-        padding-top: 30px;
+    .close-x-bottom {
+        transform: rotate(-45deg) scaleX(1.25) translateY(1px);
     }
 
     #hamburger-icon {
@@ -690,34 +682,97 @@ h1{
     }
 
     .nav-links {
-        color: #fff;
         display: none;
-        list-style-type: none;
-        justify-content: space-around;
         margin-left: -120px;
         margin-top: 10px;
+    }
+
+    .project-card-box {
+        width: 580px;
+        height: 410px;
+        margin: 40px auto;
+        box-shadow: 4px 4px 6px var(--devBoxShadowGrey);
+    }
+    
+    .project-card-content-box{
+        width: 580px;
+        height: 410px;
+        float: none;
+    }
+
+    .project-title {
+        padding-top: 30px;
     }
 
     .show-links{
         display: flex;
         padding-top: 50px;
     }
-
-    .close-x-top {
-        transform: rotate(45deg) scaleX(1.25);
-    }
-
-    .close-x-middle {
-        opacity: 0;
-        transform: scaleX(0);
-    }
-
-    .close-x-bottom {
-        transform: rotate(-45deg) scaleX(1.25) translateY(1px);
-    }
 }
 
+/* ========================================================================= */
+
 @media screen and (max-width: 600px) {
+
+    .about-text {
+        font-size: 1.6rem;
+        max-width: 350px;
+    }
+
+    button {
+        width: 90px;
+        height: 40px;
+        font-size: 1.5rem;
+    }
+
+    .btn-group {
+        margin-top: 60px;
+    }
+
+    .btn-left {
+        margin-right: 60px;
+    }
+
+    .footer-line {
+        width: 350px;
+    }
+
+    #footer-message {
+        font-size: 1.8rem;
+    }
+
+    .gregg-img {
+        width: 264px;
+    }
+
+    #header-name {
+        font-size: 5.4rem;
+    }
+
+    #header-subtitle {
+        font-size: 3.1rem;
+    }
+
+    nav {
+        height: 90px;
+        padding-bottom: 30px;
+    }
+
+    .nav-links {
+        margin-left: -140px;
+        margin-top: 30px;
+    }
+
+    .nav-links > li {
+        padding: 20px;
+        font-size: 2rem;
+    }
+
+    .nav-links > li a {
+        text-decoration: none;
+        color: #fff;
+        transition: all 100ms;
+    }
 
     .project-card-box {
         width: 380px;
@@ -735,18 +790,13 @@ h1{
         float: none;
     }
 
-    button {
-        width: 90px;
-        height: 40px;
-        font-size: 1.5rem;
+    .project-description {
+        margin-top: 20px;
     }
 
-    .btn-group {
-        margin-top: 60px;
-    }
-
-    .btn-left {
-        margin-right: 60px;
+    .project-number {
+        font-size: 6rem;
+        left: 27px;
     }
 
     .project-title {
@@ -767,6 +817,15 @@ h1{
         height: 100px;
     }
 
+    .skill-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #skill {
+        width: 240px;
+    }
+
     #tech, #tech2, #tech3 {
         font-size: 1.8rem;
         padding: 6px;
@@ -775,82 +834,5 @@ h1{
 
     #tech3 {
         padding: 13px; 
-    }
-
-    .project-description {
-        font-size: 1.8rem;
-        margin: auto;
-        margin-top: 20px;
-    }
-
-    .project-number {
-        font-size: 6rem;
-        left: 27px;
-    }
-
-    .skill-list {
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-around;
-    }
-
-    #skill {
-        width: 240px;
-    }
-
-    .about-text {
-        font-size: 1.6rem;
-        max-width: 350px;
-    }
-
-    .gregg-img {
-        width: 264px;
-    }
-
-    header {
-        margin-top: ;
-    }
-
-    #header-name {
-        font-size: 5.4rem;
-        letter-spacing: 2px;
-    }
-
-    #header-subtitle {
-        font-size: 3.1rem;
-        margin-top: -30px;
-        letter-spacing: -3px;
-    }
-
-    nav {
-        height: 90px;
-        padding-bottom: 30px;
-    }
-
-    .nav-links {
-        color: #fff;
-        justify-content: space-around;
-        list-style-type: none;
-        margin-left: -60px;
-        margin-top: 30px;
-    }
-
-    .nav-links > li {
-        padding: 20px;
-        font-size: 2rem;
-    }
-
-    .nav-links > li a {
-        text-decoration: none;
-        color: #fff;
-        transition: all 100ms;
-    }
-
-    .footer-line {
-        width: 350px;
-    }
-
-    #footer-message {
-        font-size: 1.8rem;
     }
 }
