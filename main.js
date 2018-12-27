@@ -51,8 +51,23 @@ contactSelect.addEventListener('click', function () {
 // 
 const navLinks = document.querySelector('.nav-links');
 const hamburgerIcon = document.querySelector('#hamburger-icon');
-console.log(navLinks)
-hamburgerIcon.addEventListener('click', () => {
-    // console.log(navLinks)
+hamburgerIcon.addEventListener('click', function() {
     navLinks.classList.toggle('show-links')
 })
+
+const hamburgerIconTop = document.querySelector("#hamburger-icon-top");
+hamburgerIcon.addEventListener('click', function () {
+    hamburgerIconTop.classList.toggle('close-x-top');
+})
+
+const hamburgericonMiddle = document.querySelector("#hamburger-icon-middle");
+hamburgerIcon.addEventListener("click", function () {
+    hamburgericonMiddle.classList.toggle("close-x-middle");
+});
+
+const hamburgerIconBottom = document.querySelector("#hamburger-icon-bottom");
+hamburgerIcon.addEventListener("click", function() {
+    hamburgerIconBottom.classList.toggle("close-x-bottom");
+});
+
+

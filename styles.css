@@ -870,12 +870,47 @@ h1{
 
     #hamburger-icon {
         width: 20px;
-        height: 20px;
-        background-color: #fff;
+        height: 19px;
+        /* background-color: #fff; */
         position: absolute;
         top: 10px;
         right: 10px;
         display: block;
+    }
+
+    #hamburger-icon-top {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 20px;
+        height: 3px;
+        background-color: #fff;
+        transform-origin: 0 0;
+        transition: transform 300ms ease-out;
+    }
+
+    #hamburger-icon-middle {
+        position: absolute;
+        top: 8px;
+        left: 0;
+        width: 20px;
+        height: 3px;
+        background-color: #fff;
+        transition: all 300ms ease-out;
+        transform-origin: 0 50%;
+    }
+
+    #hamburger-icon-bottom {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 20px;
+        height: 3px;
+        background-color: #fff;
+        transform-origin: 0 100%;
+        transition: transform 300ms ease-out;
     }
 
 
@@ -887,13 +922,28 @@ h1{
     }
 
     .show-links{
-        display: visible;
+           display: flex;
+           padding-top: 50px;
+       }
+
+    .close-x-top{
+        transform: rotate(45deg) scaleX(1.25);
     }
 
+     .close-x-middle{
+        opacity: 0;
+        transform: scaleX(0);
+    }
+
+    .close-x-bottom{
+        transform: rotate(-45deg) scaleX(1.25) translateY(1px);
+    }
 }
 
 
 @media screen and (max-width: 600px){
+    
+        
     .project-card-box {
         width: 380px;
         height: 410px;
