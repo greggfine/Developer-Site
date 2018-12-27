@@ -34,7 +34,7 @@ aboutSelect.addEventListener('click', function(){
 
 var skillsSelect = document.querySelector("#skills-select");
 skillsSelect.addEventListener('click', function () {
-    smoothScroll("#technical-skills", 1000);
+    smoothScroll("#technical-skills-section", 1000);
 })
 
 var projectSelect = document.querySelector("#project-select");
@@ -51,25 +51,25 @@ contactSelect.addEventListener('click', function () {
 // 
 const navLinks = document.querySelector('.nav-links');
 // const logo = document.querySelector('.logo');
-const hamburgerIcon = document.querySelector('#hamburger-icon');
-hamburgerIcon.addEventListener('click', function() {
+const menuIcon = document.querySelector('#menu-icon');
+menuIcon.addEventListener('click', function() {
     navLinks.classList.toggle('show-links')
     // logo.classList.add('hide-logo');
 })
 
-const hamburgerIconTop = document.querySelector("#hamburger-icon-top");
-hamburgerIcon.addEventListener('click', function () {
-    hamburgerIconTop.classList.toggle('close-x-top');
-})
-
-const hamburgericonMiddle = document.querySelector("#hamburger-icon-middle");
-hamburgerIcon.addEventListener("click", function () {
-    hamburgericonMiddle.classList.toggle("close-x-middle");
+const menuIconTop = document.querySelector("#menu-icon-top");
+menuIcon.addEventListener("click", function() {
+  menuIconTop.classList.toggle("close-x-top");
 });
 
-const hamburgerIconBottom = document.querySelector("#hamburger-icon-bottom");
-hamburgerIcon.addEventListener("click", function() {
-    hamburgerIconBottom.classList.toggle("close-x-bottom");
+const menuIconMiddle = document.querySelector("#menu-icon-middle");
+menuIcon.addEventListener("click", function() {
+  menuIconMiddle.classList.toggle("close-x-middle");
+});
+
+const menuIconBottom = document.querySelector("#menu-icon-bottom");
+menuIcon.addEventListener("click", function() {
+  menuIconBottom.classList.toggle("close-x-bottom");
 });
 
 
