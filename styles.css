@@ -13,7 +13,8 @@
 html {
   --devBlue: #061931;
   --devYellow: #F6F3EB;
-  --devPink: #D5917D;
+  --devPink: #d5917dde;
+  /* --devPink: #D5917D; */
   --devLightBlue: #91C6C2;
   --devGreen: #759F9B;
   --devGreyBlue: #444C63;
@@ -24,10 +25,13 @@ html {
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  /* font-family: 'Raleway', sans-serif; */
+  font-family: 'Arial', sans-serif;
   padding: 0;
   margin: 0;
-  background-color: var(--devYellow);
+  background-color: #e6e5e126;
+  /* background-color: #F6F3EB; */
+  /* background-color: var(--devYellow); */
 }
 
 h1 {
@@ -72,6 +76,7 @@ nav {
     color: #fff;
     display: flex;
     list-style-type: none;
+    /* margin-left: 200px; */
 }
 
 .nav-links > li {
@@ -101,10 +106,12 @@ nav {
 
 .about-text {
     font-size: 2.6rem;
-    max-width: 600px;
+    font-weight: 400;
+    max-width: 700px;
     margin: auto;
-    line-height: 29px;
+    line-height: 30px;
     margin-bottom: -100px;
+    color: #4d4d4d;
 }
 
 #bio-content {
@@ -116,6 +123,7 @@ nav {
     display: block;
     margin: 100px auto;
     width: 424px;
+    border: 15px solid var(--devYellow);
 }
 
 #header-name, #header-subtitle {
@@ -137,7 +145,7 @@ nav {
 #header-name {
     text-align: center;
     font-size: 6.4rem;
-    letter-spacing: 2px;
+    letter-spacing: 3px;
 }
 
 #header-subtitle {
@@ -145,7 +153,8 @@ nav {
     font-size: 5.1rem;
     margin-top: -30px;
     font-weight: 400;
-    letter-spacing: -3px;
+    letter-spacing: -3.4px;
+    color: #474d5de0;
 }
 
 img {
@@ -171,7 +180,8 @@ img {
   padding: 10px;
   margin: 10px;
   background-color: #fff;
-  box-shadow: 5px 5px 5px #00000073;
+  /* box-shadow: 5px 5px 5px #00000073;   */
+  border-radius: 20px;
 }
 
 .skills-container {
@@ -179,7 +189,21 @@ img {
   font-size: 2rem;
   margin-bottom: 120px;
   padding: 60px 0 100px 0;
-  background-color: var(--devPink);
+  background-color: var(--devPink); 
+  color: #4d4d4d;
+}
+
+#skills-divider {
+    height: 3px;
+    width: 470px;
+    background-color: rgba(240, 240, 240, .4);
+    margin: -40px auto 80px auto;
+}
+
+#skills-header {
+   color: #363535; 
+   margin-bottom: 53px;
+   letter-spacing: 5px;
 }
 
 /************************  SKILLS END ************************/
@@ -196,7 +220,9 @@ img {
     margin: 40px auto 80px auto;
     background-repeat: no-repeat;
     background-size: 500px 600px;
-    box-shadow: 10px 10px 6px var(--devBoxShadowGrey);
+    border-radius: 12px;
+    box-shadow: 4px 4px 20px #999;
+    /* box-shadow: 10px 10px 6px var(--devBoxShadowGrey); */
 }
 
 #project-card-1 {
@@ -224,6 +250,8 @@ img {
     height: 600px;
     float: right;
     position: relative;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
 }
 
 #project-item-1 {
@@ -239,7 +267,7 @@ img {
 }
 
 #project-item-4 {
-    background-color: #F8F2EB;
+    background-color: #f7f0e2;
 }
 
 #project-item-5 {
@@ -276,7 +304,7 @@ img {
     font-size: 4.5rem;
     width: 100%;
     text-align: center;
-    padding-top: 20px;
+    padding-top: 36px;
 }
 
 #project-title-music-library, #project-title-guitar-website, #project-title-cms-website {
@@ -295,7 +323,7 @@ img {
     font-weight: normal;
     width: 428px;
     margin: auto;
-    padding-top: 40px;
+    padding-top: 80px;
 }
 
 #project-subtitle-tutorial-search, #project-subtitle-statement-coder {
@@ -330,7 +358,7 @@ img {
     font-weight: normal;
     margin: auto;
     margin-top: 80px;
-    text-align: center;
+    text-align: left;
 }
 
 #project-description-tutorial-search {
@@ -343,7 +371,7 @@ img {
 
 .btn-group {
     justify-content: space-around;
-    margin-top: 130px;
+    margin-top: 140px;
     text-align: center;
 }
 
@@ -492,7 +520,7 @@ button a {
     }
 
     .project-subtitle {
-        padding-top: 0;
+        padding-top: 30px;
     }
 
     #tech, #tech2, #tech3 {
@@ -513,7 +541,7 @@ button a {
 @media screen and (max-width: 1000px) {
 
     .btn-group {
-        margin-top: 90px;
+        margin-top: 100px;
     }
 
     .logo {
@@ -540,6 +568,7 @@ button a {
 
     .project-subtitle {
         width: 388px;
+        margin-top: 60px;
     }
 
     #tech, #tech2, #tech3 {
@@ -554,6 +583,10 @@ button a {
 
 /* =========================================================================== */
 @media screen and (max-width: 800px) {
+
+    .btn-group {
+        margin-top: 120px;
+    }
 
     .close-x-top {
         transform: rotate(45deg) scaleX(1.25);
@@ -626,7 +659,7 @@ button a {
         width: 580px;
         height: 410px;
         margin: 40px auto;
-        box-shadow: 4px 4px 6px var(--devBoxShadowGrey);
+        /* box-shadow: 4px 4px 6px var(--devBoxShadowGrey); */
     }
     
     .project-card-content-box{
@@ -635,8 +668,12 @@ button a {
         float: none;
     }
 
+    .project-subtitle {
+        margin-top: 60px;
+    }
+    
     .project-title {
-        padding-top: 30px;
+        padding-top: 40px;
     }
 
     .show-links{
@@ -652,6 +689,7 @@ button a {
     .about-text {
         font-size: 1.6rem;
         max-width: 350px;
+        margin-bottom: -140px;
     }
 
     button {
@@ -661,7 +699,7 @@ button a {
     }
 
     .btn-group {
-        margin-top: 60px;
+        margin-top: 90px;
     }
 
     .btn-left {
@@ -678,6 +716,8 @@ button a {
 
     .gregg-img {
         width: 264px;
+        margin-top: 0px;
+        margin-bottom: 60px;
     }
 
     #header-name {
@@ -685,7 +725,8 @@ button a {
     }
 
     #header-subtitle {
-        font-size: 3.1rem;
+        font-size: 3.9rem;
+        letter-spacing: -3.8px;
     }
 
     nav {
@@ -700,13 +741,18 @@ button a {
 
     .nav-links > li {
         padding: 20px;
-        font-size: 2rem;
+        font-size: 1.7rem;
     }
 
     .nav-links > li a {
         text-decoration: none;
         color: #fff;
         transition: all 100ms;
+    }
+
+    .project-cards {
+        margin-top: -60px;
+        margin-bottom: 60px;
     }
 
     .project-card-box {
@@ -723,6 +769,8 @@ button a {
         width: 380px;
         height: 410px;
         float: none;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
     }
 
     .project-description {
@@ -735,9 +783,14 @@ button a {
     }
 
     .project-title {
-        padding-top: 40px;
+        padding-top: 50px;
         font-size: 3rem;
     }       
+
+    .project-title-bank {
+        max-width: 250px;
+        margin: auto;
+    }
 
     #project-title-music-library {
         max-width: 200px;
@@ -752,13 +805,23 @@ button a {
         height: 100px;
     }
 
+    .skills-container {
+        padding-top: 20px;
+    }    
+
     .skill-list {
         flex-direction: column;
         align-items: center;
+        margin-right: 35px;
     }
 
     #skill {
         width: 240px;
+    }
+
+    #skills-divider {
+        width: 300px;
+        margin: -50px auto 80px auto;
     }
 
     #tech, #tech2, #tech3 {

@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Gregg Fine</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -36,35 +35,34 @@
     <div class="about-container" id="about-section">
         <header>
             <h1 id="header-name" >GREGG <span class="last-name">FINE</span></h1>
-            <h2 id="header-subtitle">Full Stack Web Developer</h2>
+            <h2 id="header-subtitle">Full Stack Developer</h2>
         </header>
 
         <img class="gregg-img" src="./images/Gregg_Profile_Pic_Blur_Exp.jpg" />
         <section class="about-text">
     
-            <p>Hello, my name is Gregg Fine. I’m a New Jersey/NYC-based Full Stack web developer specializing mostly in HTML5, CSS3, JavaScript, React, and
-            Node. I live in Westfield, NJ with my wife Erica, my daughter Eva, and my dogs Penny and Maya.</p>
+            <p>Hello, I'm Gregg, a New Jersey/NYC-based Full Stack web developer specializing in JavaScript, React, 
+            Node, HTML5, and CSS3. I live in Westfield, NJ with my wife Erica, my daughter Eva, and my dogs Penny and Maya.</p>
 
             <p>
-            After several years as a producer of music for the world’s leading brands, I discovered a true passion for web
-            development and programming. I've mastered my software engineering capacities over the past two years through rigorous
-            self-study. 
-
+            My passions are in developing applications for productivity, efficiency and music-related knowledge.
+            I'm currently focused on improving my Node skills as well as learning GraphQL and D3.
             </p>
 
             <p>
-            I hold a dual-degree from the <span id="bio-content">New School for Social Research</span>: a Bachelor of Fine Arts
+            I hold a dual-degree from the New School for Social Research: a Bachelor of Fine Arts
             from The Mannes College of Music and a Bachelor of Arts from Eugene Lang College.
             </p>
         
             <p>
-            I’m also a published educator with 17 courses(to date) on topics ranging from Music Theory, Jazz Improvisation, Ear
+            As a music producer and guitarist, I've traveled extensively and created music for many of the world's leading brands.
+            I’m also a published educator with 17 courses on topics ranging from Music Theory, Jazz Improvisation, Ear
             Training, to Guitar Effects and Technology.
             </p>
-
+<!-- 
             <p>My experience as an educator provides me with excellent written and verbal communication skills along with exceptional problem-solving skills.
             My passion is in learning new technologies, self-improvement, and efficiency.
-            </p>
+            </p> -->
         </section>
     </div> 
 
@@ -72,23 +70,24 @@
 
     <!-- SKILLS -->
     <div class="skills-container" id="technical-skills-section">
-        <h1>Technical Skills</h1>
+        <h1 id="skills-header">Technical Skills</h1>
+        <div id="skills-divider"></div>
         <ul class="skill-list">
             <li id="skill">React</li>
             <li id="skill">Redux</li>
             <li id="skill">HTML5</li>
             <li id="skill">CSS3</li>
             <li id="skill">JavaScript</li>
-            <li id="skill">Bootstrap</li>
+            <li id="skill">Bootstrap4</li>
             <li id="skill">Web Audio API</li>
             <li id="skill">Testing(Jest)</li>
-            <li id="skill">D3</li>
-            <li id="skill">Vue</li>
-            <li id="skill">GraphQL</li>
+            <li id="skill">MongoDB</li>
+            <li id="skill">Node.JS</li>
+            <li id="skill">EJS</li>
             <li id="skill">Express</li>
             <li id="skill">jQuery</li>
             <li id="skill">mySQL</li>
-            <li id="skill">Python</li>
+            <li id="skill">Gulp</li>
         </ul>
     </div>
 
@@ -108,7 +107,7 @@
                     <span id="tech">EJS</span>
                     <span id="tech">Passport</span>
                 </h3>
-                    <p class="project-description">A searchable music library...
+                    <p class="project-description">
                     </p>
 
                 <div class="btn-group">
@@ -132,14 +131,14 @@
                     <span id="tech">BEM</span>
                     <span id="tech">Gulp</span>
                 </h3>
-                    <p class="project-description">A guitarist website...
-                    </p>
+                    <!-- <p class="project-description">A guitarist website...
+                    </p> -->
                     <div class="btn-group">
                         <button id="btn-group-2" class="btn-left">
                             <a href="https://greggfine.github.io/gtrsitelive/" target="_blank">View Site</a>
                         </button>
                         <button id="btn-group-2">
-                            <a href="">View Code</a>
+                            <a href="https://github.com/greggfine/minimal-site-2" target="_blank">View Code</a>
                         </button>
                     </div>
             </div>
@@ -154,15 +153,15 @@
                     <span id="tech3">jQuery</span>
                     <span id="tech3">SVG</span>
                 </h3>
-                <p class="project-description" id="project-description-ear-training-game">
+                <!-- <p class="project-description" id="project-description-ear-training-game">
                     An ear training game...
-                </p>
+                </p> -->
                 <div class="btn-group">
                     <button id="btn-group-3" class="btn-left">
                         <a href="https://greggfine.github.io/interval_game_v19/" target="_blank">View Site</a>
                     </button>
                     <button id="btn-group-3">
-                        <a href="">View Code</a>
+                        <a href="https://github.com/greggfine/interval_game_v19" target="_blank">View Code</a>
                     </button>
                 </div>
 
@@ -171,21 +170,21 @@
         <div class="project-card-box" id="project-card-4">
             <div class="project-card-content-box" id="project-item-4">
                 <p class="project-number" id="project-number-4">4</p>
-                <h2 class="project-title" id="project-title-tutorial-search">Statement Coder</h2>
+                <h2 class="project-title project-title-bank" id="project-title-tutorial-search">Bank Statement Coder</h2>
                 <h3 class="project-subtitle" id="project-subtitle-statement-coder">
                     <span id="tech2">React</span>
                     <span id="tech2">CSS3</span>
                     <span id="tech2">JavaScript</span>
                 </h3>
-                <p class="project-description" id="project-description-tutorial-search">A credit card/bank statement coder using
+                <!-- <p class="project-description" id="project-description-tutorial-search">A credit card/bank statement coder using
                     React...
-                </p>
+                </p> -->
                 <div class="btn-group">
                     <button id="btn-group-4" class="btn-left">
                         <a href="https://greggfine.github.io/statement-coder/" target="_blank">View Site</a>
                     </button>
                     <button id="btn-group-4">
-                        <a href="">View Code</a>
+                        <a href="https://github.com/greggfine/statement-coder" target="_blank">View Code</a>
                     </button>
                 </div>
             </div>
@@ -193,16 +192,16 @@
         <div class="project-card-box" id="project-card-5">
             <div class="project-card-content-box" id="project-item-5">
                 <p class="project-number" id="project-number-5">5</p>
-                <h2 class="project-title" id="project-title-cms-website">CMS</h2>
+                <h2 class="project-title" id="project-title-cms-website">Music Library CMS</h2>
                 <h3 class="project-subtitle" id="project-subtitle-cms-website">
-                    <span id="tech">Bootstrap4</span>
                     <span id="tech">MongoDB</span>
-                    <span id="tech">JavaScript</span>
                     <span id="tech">gridFS</span>
+                    <span id="tech">Bootstrap4</span>
+                    <span id="tech">JavaScript</span>
                 </h3>
-                <p class="project-description">Content Management System for Searchable
+                <!-- <p class="project-description">Content Management System for Searchable
                     Music Library using gridFS...
-                </p>
+                </p> -->
                     <div class="btn-group">
                         <button id="btn-group-1" class="btn-left">
                             <a href=" https://immense-atoll-44421.herokuapp.com/cms" target="_blank">View Site</a>
