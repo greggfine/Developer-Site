@@ -226,23 +226,23 @@ img {
 }
 
 #project-card-1 {
-    background-image: url('/images/music-library-crop-2.jpg');
+    background-image: url('./images/music-library-crop-2.jpg');
 }
 
 #project-card-2 {
-    background-image: url('/images/guitar-site-crop.png');
+    background-image: url('./images/guitar-site-crop.png');
 }
 
 #project-card-3 {
-    background-image: url('/images/ear-training-game-crop.png');
+    background-image: url('./images/ear-training-game-crop.png');
 }
 
 #project-card-4 {
-    background-image: url('/images/statement-coder_crop-2.png');
+    background-image: url('./images/statement-coder_crop-2.png');
 }
 
 #project-card-5 {
-    background-image: url('/images/cms.png');
+    background-image: url('./images/cms.png');
 }
 
 .project-card-content-box {
