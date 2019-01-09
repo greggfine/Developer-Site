@@ -230,19 +230,19 @@ img {
 }
 
 #project-card-2 {
-    background-image: url('../images/guitar-site-crop.png');
+    background-image: url('./guitar-site-crop.png');
 }
 
 #project-card-3 {
-    background-image: url('../images/ear-training-game-crop.png');
+    background-image: url('./ear-training-game-crop.png');
 }
 
 #project-card-4 {
-    background-image: url('../images/statement-coder_crop-2.png');
+    background-image: url('./statement-coder_crop-2.png');
 }
 
 #project-card-5 {
-    background-image: url('../images/cms.png');
+    background-image: url('./cms.png');
 }
 
 .project-card-content-box {
