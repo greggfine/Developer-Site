@@ -2,7 +2,6 @@ function  smoothScroll(target, duration) {
     var target = document.querySelector(target);
     var targetPosition = target.getBoundingClientRect().top;
     var startPosition = window.pageYOffset;
-    // var distance = targetPosition - startPosition;
     var startTime = null;
     
     function animation(currentTime) {
@@ -35,7 +34,7 @@ aboutSelect.addEventListener('click', function(){
 
 var skillsSelect = document.querySelector("#skills-select");
 skillsSelect.addEventListener('click', function () {
-    smoothScroll("#technical-skills", 1000);
+    smoothScroll("#technical-skills-section", 1000);
 })
 
 var projectSelect = document.querySelector("#project-select");
@@ -47,3 +46,30 @@ var contactSelect = document.querySelector("#contact-select");
 contactSelect.addEventListener('click', function () {
     smoothScroll("#contact-section", 1000);
 })
+
+
+// 
+const navLinks = document.querySelector('.nav-links');
+// const logo = document.querySelector('.logo');
+const menuIcon = document.querySelector('#menu-icon');
+menuIcon.addEventListener('click', function() {
+    navLinks.classList.toggle('show-links')
+    // logo.classList.add('hide-logo');
+})
+
+const menuIconTop = document.querySelector("#menu-icon-top");
+menuIcon.addEventListener("click", function() {
+  menuIconTop.classList.toggle("close-x-top");
+});
+
+const menuIconMiddle = document.querySelector("#menu-icon-middle");
+menuIcon.addEventListener("click", function() {
+  menuIconMiddle.classList.toggle("close-x-middle");
+});
+
+const menuIconBottom = document.querySelector("#menu-icon-bottom");
+menuIcon.addEventListener("click", function() {
+  menuIconBottom.classList.toggle("close-x-bottom");
+});
+
+
