@@ -307,6 +307,13 @@ img {
     padding-top: 36px;
 }
 
+#project-title-music-library {
+    max-width: 540px;
+    margin: auto;
+    padding-top: 70px;
+
+}
+
 #project-title-music-library, #project-title-guitar-website, #project-title-cms-website {
     color: rgba(231, 238, 241, 0.91);
 }
@@ -535,13 +542,19 @@ button a {
     .project-description {
         margin-top: 50px;
     }
+
+   #project-title-music-library {
+        max-width: 340px;
+        margin: auto;
+        padding-top: 40px;
+    }
 }
 /* ========================================================================== */
 
 @media screen and (max-width: 1000px) {
 
     .btn-group {
-        margin-top: 100px;
+        margin-top: 70px;
     }
 
     .logo {
@@ -571,6 +584,13 @@ button a {
         margin-top: 60px;
     }
 
+   #project-title-music-library {
+        max-width: 340px;
+        margin: auto;
+        padding-top: 30px;
+        margin-bottom: -30px;
+    }
+
     #tech, #tech2, #tech3 {
         font-size: 1.5rem;
         padding: 7px;
@@ -583,6 +603,12 @@ button a {
 
 /* =========================================================================== */
 @media screen and (max-width: 800px) {
+
+    .about-text {
+        font-size: 2.3rem;
+        max-width: 500px;
+        margin-bottom: -140px;
+    }
 
     .btn-group {
         margin-top: 120px;
@@ -721,7 +747,7 @@ button a {
     }
 
     #header-name {
-        font-size: 5.4rem;
+        font-size: 5.1rem;
     }
 
     #header-subtitle {
@@ -789,6 +815,11 @@ button a {
 
     .project-title-bank {
         max-width: 250px;
+        margin: auto;
+    }
+
+    #project-title-ear-trainer {
+        max-width: 200px;
         margin: auto;
     }
 
