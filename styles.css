@@ -443,6 +443,7 @@ button {
 button a {
     text-decoration: none;
     color: #fff;
+    cursor: pointer;
 }
 
 .btn-left {
