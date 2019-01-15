@@ -438,11 +438,15 @@ button {
     width: 140px;
     height: 50px;
     font-size: 2rem;
+    outline: none;
 }
 
 button a {
     text-decoration: none;
     color: #fff;
+}
+
+button:hover {
     cursor: pointer;
 }
 
