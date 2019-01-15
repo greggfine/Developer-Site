@@ -412,6 +412,7 @@ img {
         justify-content: space-around;
     margin-top: 140px;
     text-align: center;
+    margin-left: 100px;
 }
 
 #btn-group-1 {
@@ -428,6 +429,18 @@ img {
 
 #btn-group-4 {
     background-color: var(--devGoldenBrown);
+}
+
+.anchor-btn {
+    background-color: var(--devGreen);
+    color: #fff;
+    border-radius: 6px;
+    width: 140px;
+    height: 50px;
+    font-size: 2rem;
+    outline: none;
+    text-decoration: none;
+    padding: 15px;
 }
 
 button {
@@ -800,6 +813,13 @@ button:hover {
         margin-bottom: -140px;
     }
 
+    .anchor-btn {
+        width: 120px;
+        height: 50px;
+        font-size: 1.7rem;
+        padding: 10px;
+    }
+
     button {
         width: 90px;
         height: 40px;
@@ -808,6 +828,7 @@ button:hover {
 
     .btn-group {
         margin-top: 90px;
+        margin-left: 63px;
     }
 
     .btn-left {
