@@ -63,9 +63,14 @@ nav {
     background-color: var(--devBlue);
     height: 70px;
     color: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     padding: 0 0;
     position: fixed;
     width: 100%;
@@ -74,6 +79,8 @@ nav {
 
 .nav-links {
     color: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     list-style-type: none;
     /* margin-left: 200px; */
@@ -87,6 +94,8 @@ nav {
 .nav-links > li a {
     text-decoration: none;
     color: #fff;
+    -webkit-transition: all 100ms;
+    -o-transition: all 100ms;
     transition: all 100ms;
 }
 
@@ -127,10 +136,23 @@ nav {
 }
 
 #header-name, #header-subtitle {
-    animation-name: leadin;
-    animation-duration: 1.3s;
-    animation-iteration-count: 1;
-    animation-timing-function: ease-in;
+    -webkit-animation-name: leadin;
+            animation-name: leadin;
+    -webkit-animation-duration: 1.3s;
+            animation-duration: 1.3s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+}
+
+@-webkit-keyframes leadin{
+    0%{
+        opacity: 0;
+    }
+    100% {
+         opacity: 1;
+    }
 }
 
 @keyframes leadin{
@@ -167,15 +189,20 @@ img {
 /************************  SKILLS  ************************/
 
 .skill-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     max-width: 900px;
     margin: auto;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
 }
 
 #skill {
-  flex-basis: 27%;
+  -ms-flex-preferred-size: 27%;
+      flex-basis: 27%;
   list-style-type: none;
   padding: 10px;
   margin: 10px;
@@ -221,7 +248,8 @@ img {
     background-repeat: no-repeat;
     background-size: 500px 600px;
     border-radius: 12px;
-    box-shadow: 4px 4px 20px #999;
+    -webkit-box-shadow: 4px 4px 20px #999;
+            box-shadow: 4px 4px 20px #999;
     /* box-shadow: 10px 10px 6px var(--devBoxShadowGrey); */
 }
 
@@ -323,8 +351,11 @@ img {
 }
 
 .project-subtitle {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-around;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     color: #F8FEFC;
     font-size: 2.3rem;
     font-weight: normal;
@@ -377,7 +408,8 @@ img {
 }
 
 .btn-group {
-    justify-content: space-around;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     margin-top: 140px;
     text-align: center;
 }
@@ -411,6 +443,7 @@ button {
 button a {
     text-decoration: none;
     color: #fff;
+    cursor: pointer;
 }
 
 .btn-left {
@@ -426,9 +459,16 @@ button a {
     background-color: var(--devBlue);
     color: #fff;
     height: 500px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding-bottom: 80px;
 }
 
@@ -460,18 +500,28 @@ button a {
     text-align: center;
     font-size: 6rem;
     color: var(--devPink);
+    -webkit-transition: -webkit-transform 300ms;
+    transition: -webkit-transform 300ms;
+    -o-transition: transform 300ms;
     transition: transform 300ms;
+    transition: transform 300ms, -webkit-transform 300ms;
 }
 
 #envelope:hover {
-    transform: scale(1.2)
+    -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+            transform: scale(1.2)
 }
 
 .footer-links {
     padding-top: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     list-style-type: none;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 
 .social [class*="fa fa-"] {
@@ -487,13 +537,17 @@ button a {
     font-size: 30px;
     text-align: center;
     margin-right: 20px;
+    -webkit-transition: all 300ms;
+    -o-transition: all 300ms;
     transition: all 300ms;
 }
 
 .fa-twitter:hover, .fa-linkedin:hover, .fa-github:hover { 
     background-color: #46c0fb; 
     color:var(--devYellow);
-    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+            transform: scale(1.2);
 }
 
 /************************  FOOTER END ************************/
@@ -615,16 +669,22 @@ button a {
     }
 
     .close-x-top {
-        transform: rotate(45deg) scaleX(1.25);
+        -webkit-transform: rotate(45deg) scaleX(1.25);
+            -ms-transform: rotate(45deg) scaleX(1.25);
+                transform: rotate(45deg) scaleX(1.25);
     }
 
     .close-x-middle {
         opacity: 0;
-        transform: scaleX(0);
+        -webkit-transform: scaleX(0);
+            -ms-transform: scaleX(0);
+                transform: scaleX(0);
     }
 
     .close-x-bottom {
-        transform: rotate(-45deg) scaleX(1.25) translateY(1px);
+        -webkit-transform: rotate(-45deg) scaleX(1.25) translateY(1px);
+            -ms-transform: rotate(-45deg) scaleX(1.25) translateY(1px);
+                transform: rotate(-45deg) scaleX(1.25) translateY(1px);
     }
 
     #menu-icon {
@@ -644,8 +704,14 @@ button a {
         width: 20px;
         height: 3px;
         background-color: #fff;
-        transform-origin: 0 0;
+        -webkit-transform-origin: 0 0;
+            -ms-transform-origin: 0 0;
+                transform-origin: 0 0;
+        -webkit-transition: -webkit-transform 300ms ease-out;
+        transition: -webkit-transform 300ms ease-out;
+        -o-transition: transform 300ms ease-out;
         transition: transform 300ms ease-out;
+        transition: transform 300ms ease-out, -webkit-transform 300ms ease-out;
     }
 
     #menu-icon-middle {
@@ -655,8 +721,12 @@ button a {
         width: 20px;
         height: 3px;
         background-color: #fff;
+        -webkit-transition: all 300ms ease-out;
+        -o-transition: all 300ms ease-out;
         transition: all 300ms ease-out;
-        transform-origin: 0 50%;
+        -webkit-transform-origin: 0 50%;
+            -ms-transform-origin: 0 50%;
+                transform-origin: 0 50%;
     }
 
     #menu-icon-bottom {
@@ -667,8 +737,14 @@ button a {
         width: 20px;
         height: 3px;
         background-color: #fff;
-        transform-origin: 0 100%;
+        -webkit-transform-origin: 0 100%;
+            -ms-transform-origin: 0 100%;
+                transform-origin: 0 100%;
+        -webkit-transition: -webkit-transform 300ms ease-out;
+        transition: -webkit-transform 300ms ease-out;
+        -o-transition: transform 300ms ease-out;
         transition: transform 300ms ease-out;
+        transition: transform 300ms ease-out, -webkit-transform 300ms ease-out;
     }
 
     nav {
@@ -703,6 +779,8 @@ button a {
     }
 
     .show-links{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         padding-top: 50px;
     }
@@ -773,6 +851,8 @@ button a {
     .nav-links > li a {
         text-decoration: none;
         color: #fff;
+        -webkit-transition: all 100ms;
+        -o-transition: all 100ms;
         transition: all 100ms;
     }
 
@@ -841,8 +921,13 @@ button a {
     }    
 
     .skill-list {
-        flex-direction: column;
-        align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
         margin-right: 35px;
     }
 
