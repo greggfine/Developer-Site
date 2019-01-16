@@ -14,7 +14,6 @@ html {
   --devBlue: #061931;
   --devYellow: #F6F3EB;
   --devPink: #d5917dde;
-  /* --devPink: #D5917D; */
   --devLightBlue: #91C6C2;
   --devGreen: #759F9B;
   --devGreyBlue: #444C63;
@@ -25,13 +24,10 @@ html {
 }
 
 body {
-  /* font-family: 'Raleway', sans-serif; */
   font-family: 'Arial', sans-serif;
   padding: 0;
   margin: 0;
   background-color: #e6e5e126;
-  /* background-color: #F6F3EB; */
-  /* background-color: var(--devYellow); */
 }
 
 h1 {
@@ -83,7 +79,6 @@ nav {
     display: -ms-flexbox;
     display: flex;
     list-style-type: none;
-    /* margin-left: 200px; */
 }
 
 .nav-links > li {
@@ -207,7 +202,6 @@ img {
   padding: 10px;
   margin: 10px;
   background-color: #fff;
-  /* box-shadow: 5px 5px 5px #00000073;   */
   border-radius: 20px;
 }
 
@@ -250,7 +244,6 @@ img {
     border-radius: 12px;
     -webkit-box-shadow: 4px 4px 20px #999;
             box-shadow: 4px 4px 20px #999;
-    /* box-shadow: 10px 10px 6px var(--devBoxShadowGrey); */
 }
 
 #project-card-1 {
@@ -778,7 +771,6 @@ button:hover {
         width: 580px;
         height: 410px;
         margin: 40px auto;
-        /* box-shadow: 4px 4px 6px var(--devBoxShadowGrey); */
     }
     
     .project-card-content-box{
@@ -942,7 +934,7 @@ button:hover {
     }
 
     .skills-container {
-        padding-top: 20px;
+        padding-top: 10px;
     }    
 
     .skill-list {
@@ -954,10 +946,13 @@ button:hover {
             -ms-flex-align: center;
                 align-items: center;
         margin-right: 35px;
+        margin-top: -50px;
+        margin-bottom: -50px;
     }
 
     #skill {
-        width: 240px;
+        width: 200px;
+        font-size: 1.5rem;
     }
 
     #skills-divider {
