@@ -248,22 +248,33 @@ img {
 
 #project-card-1 {
     background-image: url('./images/music-library-crop-2.jpg');
+    background-color: var(--devYellow);
+    background-position: -0.2%, 100%; 
 }
 
 #project-card-2 {
     background-image: url('./images/guitar-site-crop.png');
+    background-color: var(--devYellow);
+    background-position: -14%, 100%; 
 }
 
 #project-card-3 {
-    background-image: url('./images/ear-training-game-crop.png');
+    background-image: url('./images/ear-training-game-new-crop copy.png');
+    background-color: var(--devYellow);
+    background-size: 63%;
+    background-position: -1% 0%;
 }
 
 #project-card-4 {
     background-image: url('./images/statement-coder_crop-2.png');
+    background-color: var(--devYellow);
+    background-size: 62.7%;
+    background-position: -0.2% 10%;
 }
 
 #project-card-5 {
     background-image: url('./images/cms.png');
+    background-color: var(--devYellow);
 }
 
 .project-card-content-box {
@@ -663,6 +674,12 @@ button:hover {
     #tech3 {
         padding: 10px; 
     }
+
+    #project-card-2 {
+        background-image: url('./images/guitar-site-crop.png');
+        background-color: var(--devYellow);
+        background-position: -9.7%, 100%; 
+    }
 }
 
 /* =========================================================================== */
@@ -772,6 +789,8 @@ button:hover {
         height: 410px;
         margin: 40px auto;
     }
+
+
     
     .project-card-content-box{
         width: 580px;
