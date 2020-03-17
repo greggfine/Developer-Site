@@ -48,13 +48,10 @@ contactSelect.addEventListener('click', function () {
 })
 
 
-// 
 const navLinks = document.querySelector('.nav-links');
-// const logo = document.querySelector('.logo');
 const menuIcon = document.querySelector('#menu-icon');
 menuIcon.addEventListener('click', function() {
     navLinks.classList.toggle('show-links')
-    // logo.classList.add('hide-logo');
 })
 
 const menuIconTop = document.querySelector("#menu-icon-top");

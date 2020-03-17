@@ -20,6 +20,7 @@ html {
   --devOrange: #BE7865;
   --devGoldenBrown: #504e47;
   --devBoxShadowGrey: #717171;
+  --devPurple: #aa4cff;
   font-size: 10px;
 }
 
@@ -44,7 +45,8 @@ h1 {
 }
 
 .logo-second-letter, .last-name {
-    color: var(--devPink);
+    /* color: var(--devPink); */
+    color: #3c455dde;
 }
 
 #menu-icon {
@@ -56,7 +58,9 @@ h1 {
 }
 
 nav { 
-    background-color: var(--devBlue);
+    /* background-color: var(--devBlue); */
+    background: rgb(6,25,49);
+    background: linear-gradient(25deg, rgba(6,25,49,1) 0%, rgba(36,85,147,1) 0%, rgba(6,25,49,1) 0%, rgba(36,85,147,1) 100%);
     height: 70px;
     color: #fff;
     display: -webkit-box;
@@ -118,6 +122,16 @@ nav {
     color: #4d4d4d;
 }
 
+.about-youtube-icon {
+    color: #fc0e0ec4;
+    font-size: 3.7rem;
+}
+
+.about-youtube-link {
+    color: #FE5751;
+    text-decoration: none;
+}
+
 #bio-content {
     color: var(--devLightBlue);
 }
@@ -127,7 +141,7 @@ nav {
     display: block;
     margin: 100px auto;
     width: 424px;
-    border: 15px solid var(--devYellow);
+    border: 7px solid var(--devYellow);
 }
 
 #header-name, #header-subtitle {
@@ -210,14 +224,16 @@ img {
   font-size: 2rem;
   margin-bottom: 120px;
   padding: 60px 0 100px 0;
-  background-color: var(--devPink); 
+  /* background-color: var(--devPink);  */
+  background-color: #d5d7d845;
   color: #4d4d4d;
 }
 
 #skills-divider {
     height: 3px;
     width: 470px;
-    background-color: rgba(240, 240, 240, .4);
+    /* background-color: rgba(240, 240, 240, .4); */
+    background-color: #adb8c666;
     margin: -40px auto 80px auto;
 }
 
@@ -259,22 +275,26 @@ img {
 }
 
 #project-card-3 {
-    background-image: url('./images/ear-training-game-new-crop.png');
-    background-color: var(--devYellow);
-    background-size: 63%;
-    background-position: -1% 0%;
+    background-image: url('./images/rhythmic-ear-trainer.png');
+    background-color: var(--devPurple);
 }
 
 #project-card-4 {
+    background-image: url('./images/synth-explorer.png');
+}
+
+#project-card-5 {
     background-image: url('./images/statement-coder_crop-2.png');
     background-color: var(--devYellow);
     background-size: 62.7%;
     background-position: -0.2% 10%;
 }
 
-#project-card-5 {
-    background-image: url('./images/cms.png');
+#project-card-6 {
+    background-image: url('./images/ear-training-game-new-crop.png');
     background-color: var(--devYellow);
+    background-size: 63%;
+    background-position: -1% 0%;
 }
 
 .project-card-content-box {
@@ -286,6 +306,20 @@ img {
     border-bottom-right-radius: 12px;
 }
 
+.project-case-study {
+    text-indent: 15px;
+    color: #fff;
+    font-size: 2rem;
+    max-width: 550px;
+    margin: 40px auto 0px;
+    /* line-height: 35px; */
+    /* line-height: 35px; */
+}
+
+.project-case-study-music-library {
+        color: #313a3a;
+}
+
 #project-item-1 {
     background-color: var(--devLightBlue);
 }
@@ -295,15 +329,19 @@ img {
 }
 
 #project-item-3 {
-    background-color: #E18E78;
+    background-color: var(--devPurple);
 }
 
 #project-item-4 {
-    background-color: #f7f0e2;
+    background-color: var(--devBlue);
 }
 
 #project-item-5 {
-    background-color: var(--devLightBlue);
+    background-color: #f7f0e2;
+}
+
+#project-item-6 {
+    background-color: #E18E78;
 }
 
 .project-number {
@@ -315,7 +353,7 @@ img {
     top: -100px;
 }
 
-#project-number-1, #project-number-5 {
+#project-number-1{
     color: var(--devGreen);
 }
 
@@ -323,12 +361,16 @@ img {
     color: var(--devGreyBlue);
 }
 
-#project-number-3 {
-    color: var(--devOrange);
+#project-number-3{
+ color: rgba(231, 238, 241, 0.91);
 }
 
-#project-number-4 {
+#project-number-4, #project-number-5 {
     color: #bfbeb9;
+}
+
+ #project-number-6 {
+    color: var(--devOrange);
 }
 
 .project-title {
@@ -346,7 +388,7 @@ img {
 
 }
 
-#project-title-music-library, #project-title-guitar-website, #project-title-cms-website {
+#project-title-music-library, #project-title-guitar-website, #project-title-cms-website, #project-title-synth-explorer {
     color: rgba(231, 238, 241, 0.91);
 }
 
@@ -365,7 +407,8 @@ img {
     font-weight: normal;
     width: 428px;
     margin: auto;
-    padding-top: 80px;
+    /* padding-top: 80px; */
+    padding-top: 40px;
 }
 
 #project-subtitle-tutorial-search, #project-subtitle-statement-coder {
@@ -374,8 +417,12 @@ img {
     font-weight: normal;
 }
 
-#project-subtitle-guitar-website, #project-subtitle-cms-website {
+#project-subtitle-guitar-website, #project-subtitle-cms-website, #project-subtitle-synth-explorer {
     color: #eee;
+}
+
+#project-item-1 #tech {
+    margin-right: 10px;
 }
 
 #tech, #tech2, #tech3 {
@@ -393,7 +440,7 @@ img {
     padding: 13px; 
 }
 
-.project-description {
+/* .project-description {
     color: rgba(248, 254, 252, 0.91);
     font-size: 1.8rem;
     max-width: 506px;
@@ -401,7 +448,7 @@ img {
     margin: auto;
     margin-top: 80px;
     text-align: left;
-}
+} */
 
 #project-description-tutorial-search {
     color: rgba(58, 61, 79, 0.91);
@@ -414,7 +461,8 @@ img {
 .btn-group {
     -ms-flex-pack: distribute;
         justify-content: space-around;
-    margin-top: 140px;
+    /* margin-top: 140px; */
+    margin-top: 90px;
     text-align: center;
     margin-left: 100px;
 }
@@ -433,6 +481,10 @@ img {
 
 #btn-group-4 {
     background-color: var(--devGoldenBrown);
+}
+
+#btn-group-5 {
+    background-color: var(--devGreyBlue);
 }
 
 .anchor-btn {
@@ -477,7 +529,9 @@ button:hover {
 /************************  FOOTER  ************************/
 
 .footer{
-    background-color: var(--devBlue);
+    /* background-color: var(--devBlue); */
+    background: rgb(6,25,49);
+    background: linear-gradient(0deg, rgba(6,25,49,1) 0%, rgba(36,85,147,1) 0%, rgba(6,25,49,1) 0%, rgba(36,85,147,1) 100%);
     color: #fff;
     height: 500px;
     display: -webkit-box;
@@ -563,7 +617,13 @@ button:hover {
     transition: all 300ms;
 }
 
-.fa-twitter:hover, .fa-linkedin:hover, .fa-github:hover { 
+/* .social [class="fa fa-youtube"] {
+    background-color: #ff0000;
+    color: #fff;
+    /* color:#ff0000; */
+} */
+
+.fa-twitter:hover, .fa-linkedin:hover, .fa-github:hover, .fa-youtube:hover  { 
     background-color: #46c0fb; 
     color:var(--devYellow);
     -webkit-transform: scale(1.2);
@@ -581,7 +641,7 @@ button:hover {
 @media screen and (max-width: 1250px) {
     
     .btn-group {
-        margin-top: 80px;
+        margin-top: 40px;
     }    
 
     .project-card-box {
@@ -596,13 +656,30 @@ button:hover {
         height: 400px;
     }
 
+    .project-case-study  {
+        font-size: 1.6rem;
+        max-width: 500px;
+    }
+
+    .project-case-study-guitar-website {
+        line-height: 1.4;
+    }
+
     .project-title {
         padding-top: 10px;
         font-size: 3.5rem;
     }
 
+    #project-title-guitar-website {
+        padding-top: 15px;
+    }
+
     .project-subtitle {
         padding-top: 30px;
+    }
+
+    #project-subtitle-guitar-website {
+        padding-top: 40px;
     }
 
     #tech, #tech2, #tech3 {
@@ -914,6 +991,19 @@ button:hover {
         border-top-right-radius: 0px;
         border-bottom-right-radius: 0px;
     }
+    
+    .project-case-study {
+        text-indent: 15px;
+        color: #fff;
+        font-size: 1.7rem;
+        max-width: 75%;
+        margin: 40px auto 0px;
+
+    }
+
+    .project-case-study-music-library {
+            color: #313a3a;
+    }
 
     .project-description {
         margin-top: 20px;
@@ -929,7 +1019,7 @@ button:hover {
         font-size: 3rem;
     }       
 
-    .project-title-bank {
+    .project-title-bank, .project-title-rhythmic-ear-trainer, .project-title-synth-explorer {
         max-width: 250px;
         margin: auto;
     }
@@ -946,10 +1036,10 @@ button:hover {
 
     .project-subtitle {
         max-width: 278px;
-        margin-top: 30px;
         display: block;
         text-align: center;
         height: 100px;
+        margin-top: -15px;
     }
 
     .skills-container {
@@ -982,10 +1072,11 @@ button:hover {
     #tech, #tech2, #tech3 {
         font-size: 1.8rem;
         padding: 6px;
-        line-height: 55px;
+        line-height: 43px;
     }
 
     #tech3 {
         padding: 13px; 
+               line-height: 55px;
     }
 }
