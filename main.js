@@ -69,4 +69,53 @@ menuIcon.addEventListener("click", function() {
   menuIconBottom.classList.toggle("close-x-bottom");
 });
 
+// SCROLL MAGIC
 
+const controller = new ScrollMagic.Controller();
+
+const scene = new ScrollMagic.Scene({
+    triggerElement: '.skills-divider',
+    duration: 0,
+    triggerHook: 0.87,
+    reverse: true,
+})
+.setClassToggle('.skills-divider', 'show')
+.addTo(controller)
+
+// const projectCardScene = new ScrollMagic.Scene({
+//     triggerElement: '.project-card-box-1',
+//     triggerHook: 0.8,
+//     // reverse: false
+// })
+// .setClassToggle('.project-card-box-1', 'move-in')
+// .addTo(controller)
+
+// const projectCardScene3 = new ScrollMagic.Scene({
+//     triggerElement: '.project-card-box-3',
+//     triggerHook: 0.8,
+//     // reverse: false
+// })
+// .setClassToggle('.project-card-box-3', 'move-in')
+// .addTo(controller)
+
+// const projectCardScene5 = new ScrollMagic.Scene({
+//     triggerElement: '.project-card-box-5',
+//     triggerHook: 0.8,
+//     // reverse: false
+// })
+// .setClassToggle('.project-card-box-5', 'move-in')
+// .addTo(controller)
+
+const footerNameScene = new ScrollMagic.Scene({
+    triggerElement: '.footer-name',
+    triggerHook: 1,
+})
+.setClassToggle('.footer-name', 'footer-name-reveal')
+.addTo(controller)
+
+const mailContainerScene = new ScrollMagic.Scene({
+    triggerElement: '.mail-container',
+    triggerHook: 1,
+})
+    .setClassToggle('.mail-container', 'mail-container-reveal')
+    .addTo(controller)

@@ -6,14 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Gregg Fine</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.min.css">
 </head>
 <body>
 
     <!-- NAV -->
-
     <nav> 
-        <h1 class="logo">G <span class="logo-second-letter">F</span></h1>
+        <h1 class="logo">Gregg Fine</h1>
         <div id="menu-icon">
             <div id="menu-icon-top"></div>
             <div id="menu-icon-middle"></div>
@@ -47,7 +46,7 @@
             <p>
             My passions are in developing applications focused on productivity, efficiency and music/audio related topics such as 
             music theory, ear training, and audio engineering.
-            I'm currently working on improving my Node skills as well as learning GraphQL and Python.
+            I'm currently working on improving my Node skills as well as learning TypeScript and Python.
             </p>
 
             <p>
@@ -71,8 +70,8 @@
 
     <!-- SKILLS -->
     <div class="skills-container" id="technical-skills-section">
-        <h1 id="skills-header">Technical Skills</h1>
-        <div id="skills-divider"></div>
+        <h1 id="skills-header" >Technical Skills</h1>
+        <div id="skills-divider" class="skills-divider"></div>
         <ul class="skill-list">
             <li id="skill">React</li>
             <li id="skill">Redux</li>
@@ -96,32 +95,65 @@
 
     <!-- PROJECTS -->
     <div class="project-cards" id="project-section">
-
-        <div class="project-card-box" id="project-card-1">
-            <div class="project-card-content-box" id="project-item-1">
-                <p class="project-number" id="project-number-1">1</p>
-                <h2 class="project-title" id="project-title-music-library">Searchable </br> Music Library</h2>
+    <div class="project-card-box project-card-box-1" id="project-card-5">
+        <div class="project-card-content-box" id="project-item-6">
+            <p class="project-number" id="project-number-6">1</p>
+            <div class="project-content">
+                <!-- <h2 class="project-title" id="project-title-music-library">Searchable </br> Music Library</h2> -->
+                <h2 class="project-title project-title-music-social-site" id="project-title-rhythmic-ear-trainer">Music Social Site</h2>
                 <h3 class="project-subtitle">
-                    <span id="tech">JavaScript</span>
+                    <span id="tech">React</span>
                     <span id="tech">Node</span>
-                    <span id="tech">Express</span>
-                    <span id="tech">EJS</span>
-                    <span id="tech">Passport</span>
+                    <span id="tech">Socket.io</span>
+                    <span id="tech">MongoDB</span>
+                    <span id="tech">Material-UI</span>
                 </h3>
-                <!-- <p class="project-case-study project-case-study-music-library">Responsive web design principles were used to produce an attractive and mobile-friendly
-                    small business website. I
-                    utilized SEO techniques to boost visibility and created the custom "loader" logo and all text content on the site.
-                </p> -->
-
+                <p class="project-case-study">I custom built this social sharing site for musicians
+                    to create user profiles and share their mixes for critique from their peers.
+                    The site is built with React for the view layer, Node/MongoDB for the backend, as 
+                    well as Socket.io for real-time bidrectional communication.
+                </p>
+    
                 <div class="btn-group">
-                    <a id="btn-group-1" class="anchor-btn btn-left" href="https://immense-atoll-44421.herokuapp.com/" target="_blank">View Site</a>
-                    <a id="btn-group-1" class="anchor-btn btn-left" href="https://github.com/greggfine/Searchable-Music-Library" target="_blank">View Code</a>
+                    <a id="btn-group-3" class="anchor-btn btn-left" href="https://salty-bayou-12671.herokuapp.com/"
+                        target="_blank">View Site</a>
+                    <a id="btn-group-3" class="anchor-btn btn-left"
+                        href="https://github.com/greggfine/social-1" target="_blank">View Code</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <div class="project-card-box project-card-box-1" id="project-card-1">
+            <div class="project-card-content-box" id="project-item-1">
+                <p class="project-number" id="project-number-1">2</p>
+                <div class="project-content">
+                    <!-- <h2 class="project-title" id="project-title-music-library">Searchable </br> Music Library</h2> -->
+                    <h2 class="project-title" id="project-title-music-library">Searchable Music Library</h2>
+                    <h3 class="project-subtitle">
+                        <span id="tech">JavaScript</span>
+                        <span id="tech">Node</span>
+                        <span id="tech">Express</span>
+                        <span id="tech">MongoDB</span>
+                        <span id="tech">Passport</span>
+                    </h3>
+                    <p class="project-case-study project-case-study-music-library">My goal with this project was to create a searchable music library for my 
+                    original music compositions. The full version consists of a custom CMS as well
+                    as Passport authentication. User has the ability to search via Genre, BPM, or Length and
+                    download the track once found.
+                    </p>
+
+                    <div class="btn-group">
+                        <a id="btn-group-1" class="anchor-btn btn-left" href="https://immense-atoll-44421.herokuapp.com/" target="_blank">View Site</a>
+                        <a id="btn-group-1" class="anchor-btn btn-left" href="https://github.com/greggfine/Searchable-Music-Library" target="_blank">View Code</a>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="project-card-box" id="project-card-2">
             <div class="project-card-content-box" id="project-item-2">
-                <p class="project-number" id="project-number-2">2</p>
+                <p class="project-number" id="project-number-2">3</p>
+                <div class="project-content">
                 <h2 class="project-title" id="project-title-guitar-website">Guitar Website</h2>
                 <h3 class="project-subtitle" id="project-subtitle-guitar-website">
                     <span id="tech">HTML5</span>
@@ -130,55 +162,60 @@
                     <span id="tech">BEM</span>
                     <span id="tech">Gulp</span>
                 </h3>
-                <!-- <p class="project-case-study">Responsive web design principles were used to produce an attractive and mobile-friendly
-                    small business website. I
-                    utilized SEO techniques to boost visibility and created the custom "loader" logo and all text content on the site.
-                </p> -->
-                    <div class="btn-group">
-                        <a id="btn-group-2" class="anchor-btn btn-left" href="https://greggfine.github.io/Guitar-Website/" target="_blank">View
-                            Site</a>
-                        <a id="btn-group-2" class="anchor-btn btn-left" href="https://github.com/greggfine/Guitar-Website" target="_blank">View Code</a>
-
-                    </div>
+                <p class="project-case-study project-case-study-guitar-website">For this guitarist website, I leveraged BEM methodology, Gulp, and PostCSS along with modular, object-oriented JavaScript to create highly-organized
+                and maintainable CSS.
+                </p>
+                <div class="btn-group">
+                    <a id="btn-group-2" class="anchor-btn btn-left" href="https://greggfine.github.io/Guitar-Website/" target="_blank">View
+                        Site</a>
+                    <a id="btn-group-2" class="anchor-btn btn-left" href="https://github.com/greggfine/Guitar-Website" target="_blank">View Code</a>
+                </div>
+            </div>
             </div>
         </div>
 
-        <div class="project-card-box" id="project-card-3">
+        <div class="project-card-box project-card-box-3" id="project-card-3">
             <div class="project-card-content-box" id="project-item-3">
-                <p class="project-number" id="project-number-3">3</p>
+                <p class="project-number" id="project-number-3">4</p>
+                <div class="project-content">
                 <h2 class="project-title project-title-rhythmic-ear-trainer">Rhythmic Ear Trainer</h2>
                 <h3 class="project-subtitle">
                     <span id="tech2">React</span>
                     <span id="tech2">Redux</span>
                     <span id="tech2">Semantic-UI</span>
                 </h3>
-                <!-- <p class="project-case-study">Responsive web design principles were used to produce an attractive and mobile-friendly small business website. I
-                utilized SEO techniques to boost visibility and created the custom "loader" logo and all text content on the site.
-                </p> -->
+                <p class="project-case-study">I utilized Redux to manage state for this ear training game I developed
+                for music students. This project got me up to speed with React Hooks which
+                I really enjoy for their readability as well as code reusability aspects.  One challenging
+                aspect was synchronizing the audio with the UI.
+                </p>
                 <div class="btn-group">
                     <a id="btn-group-5" class="anchor-btn btn-left" href="https://greggfine.github.io/subdivision-app/"
                         target="_blank">View
                         Site</a>
-                    <a id="btn-group-5" class="anchor-btn btn-left" href="https://greggfine.github.io/subdivision-app/"
+                    <a id="btn-group-5" class="anchor-btn btn-left" href="https://github.com/greggfine/subdivision-app/tree/master/subdivision-app_v7"
                         target="_blank">View
                         Code</a>
+                </div>
                 </div>
             </div>
         </div>
 
         <div class="project-card-box" id="project-card-4">
             <div class="project-card-content-box" id="project-item-4">
-                <p class="project-number" id="project-number-4">4</p>
+                <p class="project-number" id="project-number-4">5</p>
+                <div class="project-content">
                 <h2 class="project-title project-title-synth-explorer" id="project-title-synth-explorer">Synth Explorer</h2>
                 <h3 class="project-subtitle" id="project-subtitle-synth-explorer">
                     <span id="tech">Angular</span>
                     <span id="tech">CSS3</span>
                     <span id="tech">JavaScript</span>
                 </h3>
-                <!-- <p class="project-case-study">Responsive web design principles were used to produce an attractive and mobile-friendly
-                    small business website. I
-                    utilized SEO techniques to boost visibility and created the custom "loader" logo and all text content on the site.
-                </p> -->
+                <p class="project-case-study">Faced with a quick turnaround, I studied Angular's documentation to create this informational vintage synth
+                site. The views are rendered dynamically
+                from JSON data. I implemented a search field using some of Angular’s built-in directives to allow the user to
+                find a particular synth. Each synth has a detail view when clicked on.
+                </p>
                 <div class="btn-group">
                     <a id="btn-group-2" class="anchor-btn btn-left" href="https://greggfine.github.io/synth-explorer-2020/#!/home"
                         target="_blank">View
@@ -187,36 +224,14 @@
                         target="_blank">View
                         Code</a>
                 </div>
+                </div>
             </div>
         </div>
 
-        <!-- <div class="project-card-box" id="project-card-5">
-            <div class="project-card-content-box" id="project-item-5">
-                <p class="project-number" id="project-number-5">5</p>
-                <h2 class="project-title project-title-bank" id="project-title-statement-coder">Bank Statement Coder</h2>
-                <h3 class="project-subtitle" id="project-subtitle-statement-coder">
-                    <span id="tech2">React</span>
-                    <span id="tech2">CSS3</span>
-                    <span id="tech2">JavaScript</span>
-                </h3>
-                <p class="project-case-study">Responsive web design principles were used to produce an attractive and mobile-friendly
-                    small business website. I
-                    utilized SEO techniques to boost visibility and created the custom "loader" logo and all text content on the site.
-                </p>
-                <div class="btn-group">
-                    <a id="btn-group-4" class="anchor-btn btn-left" href="https://greggfine.github.io/statement-coder/"
-                        target="_blank">View
-                        Site</a>
-                    <a id="btn-group-4" class="anchor-btn btn-left" href="https://github.com/greggfine/statement-coder"
-                        target="_blank">View
-                        Code</a>
-                </div>
-            </div>
-        </div> -->
-
-        <div class="project-card-box" id="project-card-6">
+        <div class="project-card-box project-card-box-5" id="project-card-6">
             <div class="project-card-content-box" id="project-item-6">
-                <p class="project-number" id="project-number-6">5</p>
+                <p class="project-number" id="project-number-6">6</p>
+                <div class="project-content">
                 <h2 class="project-title" id="project-title-ear-trainer">Intervallic Ear Trainer</h2>
                 <h3 class="project-subtitle">
                     <span id="tech3">Web Audio API</span>
@@ -224,17 +239,19 @@
                     <span id="tech3">jQuery</span>
                     <span id="tech3">SVG</span>
                 </h3>
-                <!-- <p class="project-case-study">Responsive web design principles were used to produce an attractive and mobile-friendly
-                    small business website. I
-                    utilized SEO techniques to boost visibility and created the custom "loader" logo and all text content on the site.
-                </p> -->
+                <p class="project-case-study">I used the Web Audio API to create an intervallic ear training came for musicians. There are 4 sound sources to
+                choose from as well as various
+                possible starting pitches. “Easy” and “Hard” modes accommodate 
+                players of different skill levels.
+
+                </p>
                 <div class="btn-group">
                     <a id="btn-group-3" class="anchor-btn btn-left" href="https://greggfine.github.io/ear-trainer-app/" target="_blank">View
                             Site</a>
                     <a id="btn-group-3" class="anchor-btn btn-left" href="https://github.com/greggfine/ear-trainer-app/tree/master/dist" target="_blank">View
                             Code</a>
                 </div>
-
+            </div>
             </div>
         </div>
 
@@ -248,7 +265,7 @@
     <footer class="footer" id="contact-section">
         <h1 class="footer-name">Gregg Fine</h1>
 
-            <div id="mail-container">
+            <div id="mail-container" class="mail-container">
                 <div class="footer-line"></div>
                 <p id="footer-message">Send me an email, I'd love to hear from you!</p>
                 <div class="footer-line"></div>
@@ -265,7 +282,7 @@
     </footer>
 
     <!-- FOOTER END-->
-
+<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
 <script src="main.js"></script>    
 
 </body>
