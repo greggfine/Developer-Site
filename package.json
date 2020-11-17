@@ -12,5 +12,8 @@
   "homepage": "https://greggfine.github.io/Developer-Site",
   "dependencies": {
     "gh-pages": "^2.0.1"
+  },
+  "devDependencies": {
+    "cssnano": "^4.1.10"
   }
 }

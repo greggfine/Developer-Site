@@ -23,6 +23,7 @@ html {
 }
 
 body {
+    /* font-family: 'Eurostile', 'Arial', sans-serif; */
   font-family: 'Arial', sans-serif;
   padding: 0;
   margin: 0;
@@ -208,16 +209,10 @@ nav {
     margin-top: -30px;
     font-weight: 400;
     letter-spacing: -1.8px;
-    /* color: #474d5de0; */
     color: #474d5de6;
 
 }
 
-img {
-  /* width: 10%;
-  border-radius: 7px;
-  filter: brightness(105%); */
-}
 
 /************************  ABOUT END ************************/
 
@@ -232,6 +227,7 @@ img {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
         justify-content: space-around;
+    padding-bottom: 60px;
 }
 
 .skill {
@@ -242,6 +238,7 @@ img {
   margin: 10px;
   background-color: #fff;
   border-radius: 5px;
+  /* max-width: 150px; */
 }
 
 .section-container {
@@ -267,6 +264,7 @@ img {
 #skills-header, #projects-header, #about-header {
    color: #363535; 
    margin-bottom: 53px;
+   margin-top: 90px;
    letter-spacing: 5px;
 }
 
@@ -535,6 +533,21 @@ button:hover {
     transform: translateY(0px);
 }
 
+.footer-site-design-credits {
+    text-align: center;
+    margin-top: 60px;
+}
+
+.footer-site-design-credits-links {
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer-icon-credits {
+    text-align: center;
+    font-size: 0.7rem;
+}
+
 #mail-container {
     margin-bottom: 30px;
 }
@@ -565,6 +578,16 @@ button:hover {
     -o-transition: transform 300ms;
     transition: transform 300ms;
     transition: transform 300ms, -webkit-transform 300ms;
+}
+
+#envelope{
+    width: 90px;
+}
+
+.envelope-link{
+    width: 90px;
+    margin: 0 auto;
+    text-align: center;
 }
 
 #envelope:hover {
@@ -602,7 +625,6 @@ button:hover {
     text-decoration: none;
     background-color: var(--devYellow);
     border-radius: 30px;
-    color: #333;
     display: inline-block;
     height: 50px;
     line-height: 50px;
@@ -614,11 +636,11 @@ button:hover {
     -webkit-transition: all 300ms;
     -o-transition: all 300ms;
     transition: all 300ms;
+    border: 2px solid #fff;
 }
 
 .social [class*="fa fa-"]:hover {
-    background-color: #46c0fb; 
-    color:var(--devYellow);
+    cursor: pointer;
     -webkit-transform: scale(1.2);
         -ms-transform: scale(1.2);
             transform: scale(1.2);
@@ -1011,6 +1033,7 @@ button:hover {
         max-width: 95%;
         margin: 20px auto 0px;
         min-height: 90px;
+        text-align: left;
     }
 
     .project-description {
@@ -1082,15 +1105,15 @@ button:hover {
 
     .skill-list {
         align-items: center;
-        margin-right: 35px;
         margin-top: -50px;
         margin-bottom: -50px;
         max-width: 100%;
+        padding-left: 0px;
     }
 
     .skill {
-        min-width: 130px;
-        font-size: 1.06rem;
+        font-size: 0.9rem;
+        max-width: 110px;
     }
 
     #skills-divider {
@@ -1119,12 +1142,18 @@ button:hover {
     background-size: cover;
     background-position: 50% 30%;
     background-blend-mode: soft-light;
-    /* background-color: rgba(36,85,147,1); */
-    clip-path: polygon(0 7%, 100% 0, 100% 100%, 0 93%);
-
+    clip-path: polygon(0% 19%, 100% 0%, 100% 100%, 0 81%);
 }
 
 #skills-header{
     color: #fff;
     text-shadow: 2px 1px 8px black;
+}
+
+/* ========================================================================= */
+
+@media screen and (min-width: 1000px){
+    #technical-skills-section {
+        clip-path: polygon(0% 25%, 100% 0%, 100% 100%, 0 75%) !important;
+    }
 }
